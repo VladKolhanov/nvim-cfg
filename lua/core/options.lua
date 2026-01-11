@@ -25,7 +25,6 @@ vim.opt.smartcase = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 4
 vim.opt.mouse = "a"
-vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
