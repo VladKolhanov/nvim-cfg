@@ -50,9 +50,10 @@ return {
                 incremental_selection = {
                     enable = true,
                     keymaps = {
-                        init_selection = "<C-space>",
-                        node_incremental = "<C-space>",
+                        init_selection = "<C-l>",
+                        node_incremental = "<C-l>",
                         scope_incremental = false,
+                        node_decremental = "<C-h>",
                     },
                 },
                 additional_vim_regex_highlighting = false,
