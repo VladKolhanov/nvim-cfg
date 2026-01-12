@@ -1,5 +1,5 @@
-require 'core.options'
-require 'core.keymaps'
-require 'lua.lazy'
+require("config.options")
+require("config.keymaps")
+require("config.lazy")
 
 vim.cmd.colorscheme("vesper")
