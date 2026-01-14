@@ -3,7 +3,7 @@ vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 
 -- General options (vim.opt)
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -16,7 +16,7 @@ vim.opt.smartindent = true
 
 -- Text wrapping and line breaking
 vim.opt.wrap = true
-vim.opt.linebreak = true 
+vim.opt.linebreak = true
 vim.opt.breakindent = true
 
 -- Search and UI behavior
@@ -44,13 +44,13 @@ vim.opt.undofile = true
 
 -- Autocommands for specific filetypes (Text, Markdown, Gitcommit)
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "text", "markdown", "gitcommit" },
-    callback = function()
-        vim.opt_local.textwidth = 80
-        vim.opt_local.formatoptions:append("t") -- Auto-wrap text using textwidth
-        vim.opt_local.smartindent = false
-    end,
+	pattern = { "text", "markdown", "gitcommit" },
+	callback = function()
+		vim.opt_local.textwidth = 80
+		vim.opt_local.formatoptions:append("t") -- Auto-wrap text using textwidth
+		vim.opt_local.smartindent = false
+	end,
 })
 
 -- Allow certain keys to move the cursor to the previous/next line
-vim.opt.whichwrap:append "<,>,[,],h,l"
+vim.opt.whichwrap:append("<,>,[,],h,l")

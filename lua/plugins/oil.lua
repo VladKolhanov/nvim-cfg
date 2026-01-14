@@ -1,26 +1,26 @@
 return {
 	"stevearc/oil.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-  lazy = false,
+	lazy = false,
 	config = function()
 		require("oil").setup({
-      default_file_explorer = true, -- start up nvim with oil instead of netrw
+			default_file_explorer = true, -- start up nvim with oil instead of netrw
 			-- columns = { },
-      float = {
-        max_width = 0.5,
-        max_height = 0.5,
-      },
+			float = {
+				max_width = 0.5,
+				max_height = 0.5,
+			},
 			keymaps = {
 				["<C-h>"] = false,
-        ["<C-c>"] = false, -- prevent from closing Oil as <C-c> is esc key
+				["<C-c>"] = false, -- prevent from closing Oil as <C-c> is esc key
 				["<M-h>"] = "actions.select_split",
-        ["q"] = "actions.close",
+				["q"] = "actions.close",
 			},
-      delete_to_trash = true,
+			delete_to_trash = true,
 			view_options = {
 				show_hidden = true,
 			},
-      skip_confirm_for_simple_edits = true,
+			skip_confirm_for_simple_edits = true,
 		})
 
 		-- opens parent dir over current active window
@@ -28,12 +28,11 @@ return {
 		-- open parent dir in float window
 		vim.keymap.set("n", "<leader>-", require("oil").toggle_float)
 
-    vim.api.nvim_create_autocmd("FileType", {
-        pattern = "oil", -- Adjust if Oil uses a specific file type identifier
-        callback = function()
-            vim.opt_local.cursorline = true
-        end,
-    })
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "oil", -- Adjust if Oil uses a specific file type identifier
+			callback = function()
+				vim.opt_local.cursorline = true
+			end,
+		})
 	end,
-
 }

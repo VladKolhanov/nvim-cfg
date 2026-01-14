@@ -2,7 +2,7 @@ return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
 		"andrew-george/telescope-themes",
 	},
@@ -43,6 +43,11 @@ return {
 			builtin.grep_string({ search = word })
 		end, { desc = "Find Connected Words under cursor" })
 
-		vim.keymap.set("n", "<leader>ths", "<cmd>Telescope themes<CR>", { noremap = true, silent = true, desc = "Theme Switcher" })
-    end,
+		vim.keymap.set(
+			"n",
+			"<leader>ths",
+			"<cmd>Telescope themes<CR>",
+			{ noremap = true, silent = true, desc = "Theme Switcher" }
+		)
+	end,
 }
