@@ -218,14 +218,12 @@ return {
 
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("emmet_language_server")
-		vim.lsp.enable("emmet_ls")
 		vim.lsp.enable("ts_ls")
 		vim.lsp.enable("html")
 		vim.lsp.enable("cssls")
 		vim.lsp.enable("angularls")
 		vim.lsp.enable("astro")
 		vim.lsp.enable("marksman")
-		vim.lsp.enable("cspell_ls")
 		vim.lsp.enable("css_variables")
 		vim.lsp.enable("cssmodules_ls")
 		vim.lsp.enable("docker_compose_language_service")
@@ -235,5 +233,6 @@ return {
 		vim.lsp.enable("prismals")
 		vim.lsp.enable("basedpyright")
 		vim.lsp.enable("yamlls")
+		-- vim.lsp.enable("eslint")
 	end,
 }

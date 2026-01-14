@@ -42,11 +42,9 @@ return {
 				"tailwindcss",
 				"angularls",
 				"astro",
-				"emmet_ls",
 				"emmet_language_server",
-				-- "eslint",
+				"eslint",
 				"marksman",
-				"cspell_ls",
 				"css_variables",
 				"cssmodules_ls",
 				"docker_compose_language_service",
@@ -64,10 +62,8 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"ruff", -- python formatter and linter
-				"clangd",
 				"editorconfig-checker",
-				"cspell",
-				-- { 'eslint_d', version = '13.1.2' },
+				"eslint",
 			},
 
 			-- NOTE: mason BREAKING Change! Removed setup_handlers
