@@ -6,6 +6,7 @@ vim.g.netrw_liststyle = 3
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.termguicolors = true
 
 -- Indentation settings
 vim.opt.tabstop = 2
@@ -54,3 +55,11 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- Allow certain keys to move the cursor to the previous/next line
 vim.opt.whichwrap:append("<,>,[,],h,l")
+
+-- Session options (required for auto-session)
+vim.opt.sessionoptions:append("localoptions")
+
+-- Disable unused providers to avoid healthcheck warnings and speed up startup
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0

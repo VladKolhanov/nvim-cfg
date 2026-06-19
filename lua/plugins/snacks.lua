@@ -24,6 +24,7 @@ return {
 			-- hack: read picker docs @ https://github.com/folke/snacks.nvim/blob/main/docs/picker.md
 			picker = {
 				enabled = true,
+				ui_select = true,
 				matchers = {
 					frecency = true,
 					cwd_bonus = false,
